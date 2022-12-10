@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Student Progress App</string>
+    <string name="notification">Notification</string>
+    <string name="refresh">Refresh</string>
 </resources>
