@@ -2,4 +2,17 @@
     <string name="app_name">Student Progress App</string>
     <string name="notification">Notification</string>
     <string name="refresh">Refresh</string>
+    <string name="all_assessments">"Assessments "</string>
+    <string name="add_button">Add Button</string>
+    <string name="assessment_name">Assessment Name</string>
+    <string name="course_name">Course</string>
+    <string name="assessment_type">Assessment Type</string>
+    <string name="deadline_name">Deadline</string>
+    <string name="save">SAVE</string>
+    <string name="delete">DELETE</string>
+    <string name="cancel">CANCEL</string>
+    <string-array name="assessment_types">
+        <item>Objective</item>
+        <item>Performance</item>
+    </string-array>
 </resources>
