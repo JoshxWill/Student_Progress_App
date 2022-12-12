@@ -26,6 +26,7 @@
     <string name="class_status">Status</string>
     <string name="start_date">Start Date</string>
     <string name="end_date">End Date</string>
+    <string name="class_notes">Notes</string>
     <string-array name="assessment_types">
         <item>Objective</item>
         <item>Performance</item>
