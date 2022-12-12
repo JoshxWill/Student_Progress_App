@@ -9,7 +9,9 @@
         android:id="@+id/tableLayout20"
         android:layout_width="412dp"
         android:layout_height="141dp"
-        tools:layout_editor_absoluteX="-1dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
             android:layout_width="match_parent"
