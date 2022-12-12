@@ -11,6 +11,13 @@
     <string name="save">SAVE</string>
     <string name="delete">DELETE</string>
     <string name="cancel">CANCEL</string>
+    <string name="all_classes">Classes</string>
+    <string name="title_home_page">Progress Tech University</string>
+    <string name="school_logo">School Logo</string>
+    <string name="all_terms">Terms</string>
+    <string name="divide">divide_text</string>
+    <string name="divider">-</string>
+    <string name="all_assessment">Assessments</string>
     <string-array name="assessment_types">
         <item>Objective</item>
         <item>Performance</item>
