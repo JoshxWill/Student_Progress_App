@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/allAssessmentView"
+        android:id="@+id/allAssessmentsView"
         android:layout_width="409dp"
         android:layout_height="668dp"
         android:layout_marginStart="1dp"
@@ -40,7 +40,7 @@
         android:clickable="true"
         android:contentDescription="@string/add_button"
         android:onClick="addAssessment"
-        app:layout_constraintBottom_toBottomOf="@+id/allAssessmentView"
+        app:layout_constraintBottom_toBottomOf="@+id/allAssessmentsView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
