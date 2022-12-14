@@ -442,8 +442,8 @@ public class ClassDetailController extends AppCompatActivity {
         sharingIntent.setType("text/plain");
         String note = String.valueOf(classNotes.getText());
         String className = String.valueOf(name.getText());
-        String shareBody = className+": "+note;
-        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, className+" notes");
+        String shareBody = className +": "+note;
+        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, className +" notes");
         sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
         startActivity(Intent.createChooser(sharingIntent, "Share via"));
     }
