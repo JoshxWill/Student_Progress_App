@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.wgu.studentprogressapp.Entities.Assessment;
 import com.wgu.studentprogressapp.Entities.Class;
+import com.wgu.studentprogressapp.Entities.Term;
 
 import java.util.List;
 
@@ -24,5 +25,17 @@ public class Repo {
     }
 
     public void delete(Assessment assessmentCurrent) {
+    }
+
+    public List<Term> getAllTerms() {
+    }
+
+    public void update(Class currentClass) {
+    }
+
+    public void insert(Class currentClass) {
+    }
+
+    public void delete(Class current) {
     }
 }

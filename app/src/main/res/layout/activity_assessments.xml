@@ -40,6 +40,7 @@
         android:clickable="true"
         android:contentDescription="@string/add_button"
         android:onClick="addAssessment"
+        app:backgroundTint="#673AB7"
         app:layout_constraintBottom_toBottomOf="@+id/allAssessmentsView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

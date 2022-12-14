@@ -44,7 +44,7 @@
                         android:text="@string/class_name" />
 
                     <EditText
-                        android:id="@+id/textClassName"
+                        android:id="@+id/textClassNameBox"
                         android:layout_width="274dp"
                         android:layout_height="wrap_content"
                         android:ems="10"
