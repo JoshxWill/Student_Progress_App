@@ -2,6 +2,7 @@ package com.wgu.studentprogressapp.Database;
 
 import android.content.Context;
 
+import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
@@ -9,9 +10,10 @@ import com.wgu.studentprogressapp.DAO.AssessmentDAO;
 import com.wgu.studentprogressapp.DAO.ClassDAO;
 import com.wgu.studentprogressapp.DAO.TermDAO;
 import com.wgu.studentprogressapp.Entities.Assessment;
+import com.wgu.studentprogressapp.Entities.Class;
 import com.wgu.studentprogressapp.Entities.Term;
 
-@androidx.room.Database(entities = {Assessment.class, Class.class, Term.class}, version = 3, exportSchema = false)
+@Database(entities = {Assessment.class, Class.class, Term.class}, version = 3, exportSchema = false)
 public abstract class StudentDatabase extends RoomDatabase {
     public abstract AssessmentDAO assessmentDAO();
     public abstract ClassDAO classDAO();
