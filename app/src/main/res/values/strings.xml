@@ -27,6 +27,8 @@
     <string name="start_date">Start Date</string>
     <string name="end_date">End Date</string>
     <string name="class_notes">Notes</string>
+    <string name="channel_name">channelname</string>
+    <string name="channel_description">channel description</string>
     <string-array name="assessment_types">
         <item>Objective</item>
         <item>Performance</item>

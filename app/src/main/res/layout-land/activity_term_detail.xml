@@ -47,11 +47,11 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
             <Button
-                android:id="@+id/StartDatePickerBtn"
+                android:id="@+id/StartDatePickerBtn20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="startDatePicker"
-                android:textColor="#FFFFFF" />
+                android:onClick="startDatePicker" />
+
         </TableRow>
 
         <TableRow
@@ -66,11 +66,11 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
             <Button
-                android:id="@+id/EndDatePickerBtn"
+                android:id="@+id/EndDatePickerBtn20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="endDatePicker"
-                android:textColor="#FFFFFF" />
+                android:onClick="endDatePicker" />
+
         </TableRow>
 
         <TableRow

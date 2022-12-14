@@ -25,11 +25,12 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
             <EditText
-                android:id="@+id/textTermName"
-                android:layout_width="264dp"
+                android:id="@+id/textTermNameBox"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
+
         </TableRow>
 
         <TableRow
@@ -44,7 +45,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
             <Button
-                android:id="@+id/StartDatePickerBtn20"
+                android:id="@+id/StartDatePickerBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="startDatePicker"
@@ -63,7 +64,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
             <Button
-                android:id="@+id/EndDatePickerBtn20"
+                android:id="@+id/EndDatePickerBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="endDatePicker"

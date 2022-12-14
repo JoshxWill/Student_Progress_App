@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/StartDatePickerBtn2"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -47,11 +48,10 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
             <Button
-                android:id="@+id/StartDatePickerBtn"
+                android:id="@+id/StartDatePickerBtn20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="startDatePicker"
-                android:textColor="#FFFFFF" />
+                android:onClick="startDatePicker" />
 
         </TableRow>
 
@@ -67,7 +67,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
             <Button
-                android:id="@+id/EndDatePickerBtn"
+                android:id="@+id/EndDatePickerBtn20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="endDatePicker" />

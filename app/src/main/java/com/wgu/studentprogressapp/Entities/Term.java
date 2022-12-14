@@ -1,6 +1,5 @@
 package com.wgu.studentprogressapp.Entities;
 
-import android.util.StringBuilderPrinter;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
