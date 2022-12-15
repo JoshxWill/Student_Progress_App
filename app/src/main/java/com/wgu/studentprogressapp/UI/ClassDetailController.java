@@ -246,7 +246,7 @@ public class ClassDetailController extends AppCompatActivity {
         classNotes.setText(String.valueOf(getIntent().getStringExtra("notes")));
         mentorName.setText(String.valueOf(getIntent().getStringExtra("instructorName")));
         mentorPhone.setText(String.valueOf(getIntent().getStringExtra("instructorPhone")));
-        mentorEmail.setText(String.valueOf(getIntent().getStringExtra("instructorEMail")));
+        mentorEmail.setText(String.valueOf(getIntent().getStringExtra("instructorEmail")));
         startDateBtn.setText(String.valueOf(getIntent().getStringExtra("start")));
         endDateBtn.setText(String.valueOf(getIntent().getStringExtra("end")));
         String stringTermID = String.valueOf(getIntent().getStringExtra("term"));

@@ -170,7 +170,7 @@ public class AssessmentDetailController extends AppCompatActivity {
     }
 
     private String getCurrentDate() {
-        android.icu.util.Calendar calendar = Calendar.getInstance();
+        Calendar calendar = Calendar.getInstance();
         int year = calendar.get(Calendar.YEAR);
         int month = calendar.get(Calendar.MONTH);
 

@@ -240,7 +240,7 @@ public class TermDetailController extends AppCompatActivity {
             i=i+1;
         }
         List<Class> allClasses = repo.getAllClasses();
-        int j =0;
+        int j = 0;
         while(j < allClasses.size()){
             if(allClasses.get(j).getTermID() == termID){
                 Class currentClass = allClasses.get(j);
