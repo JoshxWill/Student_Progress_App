@@ -7,8 +7,8 @@
 
     <ScrollView
         android:id="@+id/scrollView"
-        android:layout_width="413dp"
-        android:layout_height="320dp"
+        android:layout_width="408dp"
+        android:layout_height="373dp"
         android:layout_marginTop="1dp"
         android:scrollbars="vertical"
         android:verticalScrollbarPosition="right"
@@ -242,8 +242,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/classAssessmentView"
-        android:layout_width="415dp"
-        android:layout_height="384dp"
+        android:layout_width="417dp"
+        android:layout_height="341dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
