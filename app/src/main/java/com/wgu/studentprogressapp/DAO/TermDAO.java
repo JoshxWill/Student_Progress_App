@@ -13,18 +13,22 @@ import java.util.List;
 
 @Dao
 public interface TermDAO {
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    void insert(Term term);
 
-    @Update
-    void update(Term term);
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    void insert (Term term);
+
+    //TODO may have to change to replace instead of ignore
+    //TODO may need to add an insert all
 
     @Delete
-    void delete(Term term);
+    void delete (Term term );
 
-    @Query("DELETE FROM table_term")
-    void deleteAllTerms();
+    @Query("DELETE FROM terms_table")
+    void deleteAllFromTermsTable();
 
-    @Query("SELECT * FROM table_term ORDER BY termID ASC")
-    List<Term> getAllTerms();
+    @Query("SELECT * FROM terms_table ORDER BY termId ASC") // change to order by todo
+    List<Term> getAllTermsFromTable();
+
+
 }

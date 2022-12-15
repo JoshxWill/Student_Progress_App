@@ -3,52 +3,50 @@ package com.wgu.studentprogressapp.Entities;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-/**
- * Assessment Entity
- *
- * @author Joshua Williams
- */
-@Entity(tableName = "table_assessment")
+@Entity (tableName = "assessment_table")
 public class Assessment {
-    @PrimaryKey(autoGenerate = true)
-    private int assessmentID;
-    private String assessmentName;
+
+    @PrimaryKey
+    private int assessmentId;
+    private String assessmentTitle;
     private String assessmentType;
-    private String endDate;
-    private int classID;
+    private String assessmentStartDate;
+    private String assessmentEndDate;
+    private int assessmentCourseId;
 
-    public Assessment(int assessmentID, String assessmentName, String assessmentType, String endDate, int classID){
-        this.assessmentID = assessmentID;
-        this.assessmentName = assessmentName;
+    public Assessment(int assessmentId, String assessmentTitle, String assessmentType, String assessmentStartDate, String assessmentEndDate, int assessmentCourseId) {
+        this.assessmentId = assessmentId;
+        this.assessmentTitle = assessmentTitle;
         this.assessmentType = assessmentType;
-        this.endDate = endDate;
-        this.classID = classID;
-    }
-    //Getter-Setter for Class ID
-    public int getClassID(){
-        return classID;
+        this.assessmentStartDate = assessmentStartDate;
+        this.assessmentEndDate = assessmentEndDate;
+        this.assessmentCourseId = assessmentCourseId;
     }
 
-    public void setClassID(int classID){
-        this.classID = classID;
-    }
-    //Getter-Setter for Assessment ID
-    public int getAssessmentID() {
-        return assessmentID;
+    public String getAssessmentEndDate() {
+        return assessmentEndDate;
     }
 
-    public void setAssessmentID(int assessmentID) {
-        this.assessmentID = assessmentID;
-    }
-    //Getter-Setter for Assessment Name
-    public String getAssessmentName() {
-        return assessmentName;
+    public void setAssessmentEndDate(String assessmentEndDate) {
+        this.assessmentEndDate = assessmentEndDate;
     }
 
-    public void setAssessmentName(String assessmentName) {
-        this.assessmentName = assessmentName;
+    public int getAssessmentId() {
+        return assessmentId;
     }
-    //Getter-Setter for Assessment Type
+
+    public void setAssessmentId(int assessmentId) {
+        this.assessmentId = assessmentId;
+    }
+
+    public String getAssessmentTitle() {
+        return assessmentTitle;
+    }
+
+    public void setAssessmentTitle(String assessmentTitle) {
+        this.assessmentTitle = assessmentTitle;
+    }
+
     public String getAssessmentType() {
         return assessmentType;
     }
@@ -56,12 +54,22 @@ public class Assessment {
     public void setAssessmentType(String assessmentType) {
         this.assessmentType = assessmentType;
     }
-    //Getter-Setter for End Date
-    public String getEndDate() {
-        return endDate;
+
+    public String getAssessmentStartDate() {
+        return assessmentStartDate;
     }
 
-    public void setEndDate(String endDate) {
-        this.endDate = endDate;
+    public void setAssessmentStartDate(String assessmentStartDate) {
+        this.assessmentStartDate = assessmentStartDate;
+    }
+
+
+    public int getAssessmentCourseId() {
+        return assessmentCourseId;
+    }
+
+    public void setAssessmentCourseId(int assessmentCourseId) {
+        this.assessmentCourseId = assessmentCourseId;
     }
 }
+

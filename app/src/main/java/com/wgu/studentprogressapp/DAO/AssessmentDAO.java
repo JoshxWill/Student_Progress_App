@@ -13,18 +13,17 @@ import java.util.List;
 
 @Dao
 public interface AssessmentDAO {
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    public void insert(Assessment assessment);
 
-    @Update
-    public void update(Assessment assessment);
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    void insert(Assessment assessment);
 
     @Delete
-    public void delete(Assessment assessment);
+    void delete(Assessment assessment);
 
-    @Query("DELETE FROM table_assessment")
-    public void deleteAllAssessments();
+    @Query("DELETE FROM assessment_table")
+    void deleteAllFromAssessmentTable();
 
-    @Query("SELECT * FROM table_assessment ORDER BY assessmentID ASC")
-    List<Assessment> getAllAssessments();
+    @Query("SELECT * FROM assessment_table ORDER BY assessmentId ASC")
+    List<Assessment> getAssessmentsFromTable();
+
 }

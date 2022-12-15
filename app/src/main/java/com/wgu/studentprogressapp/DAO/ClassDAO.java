@@ -5,26 +5,29 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
-import androidx.room.Update;
 
-import com.wgu.studentprogressapp.Entities.Class;
+import com.wgu.studentprogressapp.Entities.Course;
 
 import java.util.List;
 
 @Dao
 public interface ClassDAO {
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    void insert(Class classes);
 
-    @Update
-    void update(Class classes);
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    void insert (Course course);
+
+    //TODO may have to change to replace instead of ignore
+    //TODO may need to add an insert all
 
     @Delete
-    void delete(Class classes);
+    void delete (Course course );
 
-    @Query("DELETE FROM table_class")
-    void deleteAllClasses();
 
-    @Query("SELECT * FROM table_class ORDER BY classID ASC")
-    List<Class> getAllClasses();
+    @Query("DELETE FROM course_table")
+    void deleteAllFromCourseTable();
+
+    @Query("SELECT * FROM course_table ORDER BY courseId ASC") // change to order by todo
+    List<Course> getAllCoursesFromTable();
+
+
 }

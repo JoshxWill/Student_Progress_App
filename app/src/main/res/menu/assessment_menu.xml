@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/assessment_date_notification"
+        android:orderInCategory="100"
+        android:title="Start Reminder" />
+    <item
+        android:id="@+id/assessment_end_date_notification"
+        android:orderInCategory="100"
+        android:title="End Reminder" />
+</menu>

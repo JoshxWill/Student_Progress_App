@@ -1,59 +1,60 @@
 package com.wgu.studentprogressapp.Entities;
 
-
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-/**
- * Term Entity
- *
- * @author Joshua Williams
- */
-@Entity(tableName = "table_term")
+@Entity (tableName = "terms_table")
 public class Term {
-    @PrimaryKey(autoGenerate = true)
-    private int termID;
-    private String termName;
-    private String startDate;
-    private String endDate;
 
-    public Term(int termID, String termName, String startDate, String endDate){
-        this.termID = termID;
-        this.termName = termName;
-        this.startDate = startDate;
-        this.endDate = endDate;
-    }
+    @PrimaryKey() //TODO may not need to autogenerate
+    private int termId;
 
-    //Getter-Setter for Term ID
-    public int getTermID() {
-        return termID;
+    private String termTitle;
+    private String startOfTerm;
+    private String endOfTerm;
+
+
+    public Term( int termId, String termTitle, String startOfTerm, String endOfTerm) {
+        this.termId = termId;
+        this.termTitle = termTitle;
+        this.startOfTerm = startOfTerm;
+        this.endOfTerm = endOfTerm;
     }
 
-    public void setTermID(int termID) {
-        this.termID = termID;
-    }
-    //Getter-Setter for Term Name
-    public String getTermName() {
-        return termName;
+
+    // Getters & Setters
+    public int getTermId() {
+        return termId;
     }
 
-    public void setTermName(String termName) {
-        this.termName = termName;
-    }
-    //Getter-Setter for Start Date
-    public String getStartDate(){
-        return startDate;
+    public String getStartOfTerm() {
+        return startOfTerm;
     }
 
-    public void setStartDate(String startDate){
-        this.startDate = startDate;
-    }
-    //Getter-Setter for End Date
-    public String getEndDate() {
-        return endDate;
+    public void setStartOfTerm(String startOfTerm) {
+        this.startOfTerm = startOfTerm;
     }
 
-    public void setEndDate(String endDate) {
-        this.endDate = endDate;
+    public void setEndOfTerm(String endOfTerm) {
+        this.endOfTerm = endOfTerm;
     }
+
+    public String getEndOfTerm() {
+        return endOfTerm;
+    }
+
+    public void setTermId(int termId) {
+        this.termId = termId;
+    }
+
+    public String getTermTitle() {
+        return termTitle;
+    }
+
+    public void setTermTitle(String termTitle) {
+        this.termTitle = termTitle;
+    }
+
+
 }
+
