@@ -34,12 +34,12 @@ public abstract class AppDatabase extends RoomDatabase {
     private static volatile AppDatabase instance;
 
 
-    // todo Look at adams if this doesn't work
+
     public static AppDatabase getDatabaseInstance(Context context) {
         if (instance == null) {
             synchronized (AppDatabase.class) {
                 instance = Room.databaseBuilder(context.getApplicationContext(),
-                                AppDatabase.class, "database_scheduler")
+                                AppDatabase.class, "app_database")
                         .fallbackToDestructiveMigration()
                         .addCallback(dbCallback) // used for adding data to database
                         .build();

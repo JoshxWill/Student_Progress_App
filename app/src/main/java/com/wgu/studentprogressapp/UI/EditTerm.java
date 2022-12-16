@@ -54,7 +54,7 @@ public class EditTerm extends AppCompatActivity {
 
     List<Course> courseInTermList;
 
-    //------------------OnCreate--------------------------//
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,9 +69,9 @@ public class EditTerm extends AppCompatActivity {
         getTerm();
         getAllCourses();
 
-        // gets and sets courses for recycleview
+
         mCourseAdapter.courseSetter(courseInTermList);
-        //    setSwipeDelete();
+
         setDatePicker();
 
 
@@ -81,7 +81,7 @@ public class EditTerm extends AppCompatActivity {
                 return false;
             }
 
-            // for swiping and deleting
+
             @Override
             public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
                 mRepository.delete(mCourseAdapter.getCourseAt(viewHolder.getAdapterPosition()));
@@ -95,7 +95,7 @@ public class EditTerm extends AppCompatActivity {
 
     }
 
-    //------------------OnCreate--------------------------//
+
 
     public void setRecyclerViewAndAdapter() {
         mRecyclerView = findViewById(R.id.edit_term_recyler);
@@ -146,7 +146,7 @@ public class EditTerm extends AppCompatActivity {
         String name = mEditName.getText().toString();
         String start = mEditStartDate.getText().toString();
         String end = mEndDate.getText().toString();
-// todo may need validation for empty fields
+
         Term updatedTerm = new Term(mTermId, name, start, end);
         mRepository.insert(updatedTerm);
 

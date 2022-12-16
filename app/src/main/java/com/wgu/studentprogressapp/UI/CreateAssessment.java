@@ -56,7 +56,7 @@ public class CreateAssessment extends AppCompatActivity {
     int mAssessmentId;
     int mAssessCourseId;
 
-    //--------------------OnCreate------------------------------------//
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -128,7 +128,6 @@ public class CreateAssessment extends AppCompatActivity {
 
     }
 
-//--------------------OnCreate------------------------------------//
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

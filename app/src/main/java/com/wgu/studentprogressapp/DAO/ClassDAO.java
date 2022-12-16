@@ -16,8 +16,6 @@ public interface ClassDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insert (Course course);
 
-    //TODO may have to change to replace instead of ignore
-    //TODO may need to add an insert all
 
     @Delete
     void delete (Course course );

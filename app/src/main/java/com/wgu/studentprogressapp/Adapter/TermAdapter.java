@@ -28,15 +28,15 @@ public class TermAdapter extends RecyclerView.Adapter<TermAdapter.TermViewHolder
         this.context = context;
     }
 
-    // CLASS
+
     public class TermViewHolder extends RecyclerView.ViewHolder {
         public TextView recyclerViewItemLayout;
-        //todo add course here
+
 
         private TermViewHolder(@NonNull View itemView) {
             super(itemView);
             recyclerViewItemLayout = itemView.findViewById(R.id.item_layout); // -> TEXT ON XML CARD
-            //todo add course here
+
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

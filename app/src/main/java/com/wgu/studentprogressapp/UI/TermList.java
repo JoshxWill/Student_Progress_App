@@ -31,18 +31,17 @@ public class TermList extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // may need something here todo
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_term_list);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         databaseRepository = new Repo(getApplication());
 
-        // Deals with adapter and recyleview
+
         getTermsList();
         buildRecyclerView();
 
-        // for Deleting with swipe
         new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
             @Override
             public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {

@@ -27,7 +27,7 @@ public class AssessmentAdapter extends RecyclerView.Adapter<AssessmentAdapter.As
     }
 
 
-    // gets data from selected card and passes it onto onCreate
+
     public class AssessmentViewHolder extends RecyclerView.ViewHolder{
         public TextView recyclerViewItemLayout;
         public AssessmentViewHolder(@NonNull View itemView) {

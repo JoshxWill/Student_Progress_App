@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey;
 @Entity (tableName = "terms_table")
 public class Term {
 
-    @PrimaryKey() //TODO may not need to autogenerate
+    @PrimaryKey()
     private int termId;
 
     private String termTitle;

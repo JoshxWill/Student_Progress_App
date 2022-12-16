@@ -20,9 +20,6 @@ public class MainController extends AppCompatActivity {
         Repo databaseRepository = new Repo(getApplication());
         databaseRepository.getAllTermsFromRepo();
 
-//        TermTable termTable = new TermTable(1, "aloha", "1/1/22", "2/2/22");
-//        repository.insert(termTable); todo not working, not sure why, don't really need it
-
     }
 
 

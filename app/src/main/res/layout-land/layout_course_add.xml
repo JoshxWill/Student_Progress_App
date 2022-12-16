@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="20dp"
     android:layout_marginTop="35dp"
+    android:background="#03A9F4"
     android:paddingTop="20dp"
     tools:context=".UI.CreateCourse">
 
@@ -13,15 +14,14 @@
         android:id="@+id/assessmentText"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:background="#9ECEF3"
-        android:text="Assessments"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@id/save_btn"
         android:layout_marginTop="5dp"
+        android:background="#000000"
+        android:text="Assessments"
+        android:textAlignment="center"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteX="464dp"
-        tools:layout_editor_absoluteY="156dp" />
+        app:layout_constraintTop_toBottomOf="@id/save_btn" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/assessment_recyclerView"
@@ -34,23 +34,22 @@
         android:id="@+id/save_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#FF5722"
         android:onClick="saveTermOnClick"
         android:text="Save Course"
-        app:layout_constraintTop_toBottomOf="@id/add_course_status"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="10dp"
-        tools:layout_editor_absoluteX="568dp"
-        tools:layout_editor_absoluteY="128dp" />
+        app:layout_constraintTop_toBottomOf="@+id/add_course_status" />
 
     <EditText
         android:id="@+id/add_course_status"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/statusText"
+        android:layout_marginEnd="20dp"
         app:layout_constraintBottom_toBottomOf="@id/statusText"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="@id/statusText"
         tools:layout_editor_absoluteX="554dp"
         tools:layout_editor_absoluteY="72dp" />
 
@@ -60,39 +59,33 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="Notes:"
-        android:textColor="@color/black"
+        android:textColor="#FF5722"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/startText"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="117dp" />
+        app:layout_constraintTop_toBottomOf="@id/startText" />
 
     <TextView
         android:id="@+id/endText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginRight="250dp"
         android:text="End Date: "
-        android:textColor="@color/black"
+        android:textColor="#FF5722"
         android:textSize="20sp"
-        app:layout_constraintTop_toTopOf="@id/nameText"
         app:layout_constraintBottom_toBottomOf="@id/nameText"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginRight="250dp"
-        tools:layout_editor_absoluteX="420dp"
-        tools:layout_editor_absoluteY="12dp" />
+        app:layout_constraintTop_toTopOf="@id/nameText" />
 
     <TextView
         android:id="@+id/statusText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:text="Status:"
-        android:textColor="@color/black"
+        android:textColor="#FF5722"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@id/endText"
-        app:layout_constraintTop_toBottomOf="@id/endText"
-        android:layout_marginTop="15dp"
-        tools:layout_editor_absoluteX="374dp"
-        tools:layout_editor_absoluteY="81dp" />
+        app:layout_constraintTop_toBottomOf="@id/endText" />
 
     <EditText
         android:id="@+id/add_course_notes"
@@ -111,12 +104,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Course Name: "
-        android:textColor="@color/black"
+        android:textColor="#FF5722"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/add_course_name"
@@ -135,24 +126,22 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="Start Date: "
-        android:textColor="@color/black"
+        android:textColor="#FF5722"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nameText"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="57dp" />
+        app:layout_constraintTop_toBottomOf="@id/nameText" />
 
     <EditText
         android:id="@+id/add_course_end_date"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
         android:ems="10"
         android:hint="01/01/2022"
         android:inputType="date"
-        app:layout_constraintTop_toTopOf="@id/endText"
         app:layout_constraintBottom_toBottomOf="@id/endText"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="@id/endText"
         tools:layout_editor_absoluteX="568dp"
         tools:layout_editor_absoluteY="-4dp" />
 
@@ -181,41 +170,39 @@
         android:id="@+id/add_instructor_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="addInstructorButton"
-        app:layout_constraintEnd_toEndOf="@id/instructor_recyclerView"
-        app:layout_constraintTop_toBottomOf="@id/instructorText"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_add_menu"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
 
-        tools:layout_editor_absoluteX="213dp"
-        tools:layout_editor_absoluteY="178dp" />
+        android:onClick="addInstructorButton"
+        android:src="@drawable/ic_add_menu"
+        app:backgroundTint="#FF5722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructor_recyclerView" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_assessment_btn"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="108dp"
         android:onClick="addAssessmentButton"
         android:src="@drawable/ic_add_menu"
-        app:layout_constraintTop_toBottomOf="@id/assessmentText"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="@id/assessment_recyclerView"
-        android:layout_marginEnd="10dp"
-        tools:layout_editor_absoluteX="708dp"
-        tools:layout_editor_absoluteY="274dp" />
+        app:backgroundTint="#FF5722"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assessment_recyclerView" />
 
     <TextView
         android:id="@+id/instructorText"
         android:layout_width="286dp"
         android:layout_height="0dp"
-        android:background="#9ECEF3"
-        android:text="Instructor"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@id/save_btn"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="5dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="156dp" />
+        android:background="#000000"
+        android:text="Instructor"
+        android:textAlignment="center"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/save_btn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

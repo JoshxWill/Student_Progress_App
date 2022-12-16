@@ -18,9 +18,6 @@ public interface TermDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insert (Term term);
 
-    //TODO may have to change to replace instead of ignore
-    //TODO may need to add an insert all
-
     @Delete
     void delete (Term term );
 

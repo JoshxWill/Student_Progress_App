@@ -26,7 +26,7 @@ public class Repo {
     private List<Assessment> mallAssessments;
     private List<CourseInstructor> mallInstructors;
 
-    // Todo update constructor here
+
     public Repo(Application application){
         AppDatabase database = AppDatabase.getDatabaseInstance(application);
         mtermDao = database.termDao();
@@ -115,7 +115,7 @@ public class Repo {
         });
     }
 
-    // --------------ASSESSMENTS----------------------
+    // ASSESSMENTS
     public List<Assessment> getAllAssessmentsFromRepo() {
         AppDatabase.dbWriteExecutor.execute(() -> {
             mallAssessments = mAssessmentDao.getAssessmentsFromTable();
@@ -151,7 +151,7 @@ public class Repo {
         });
     }
 
-    // --------------INSTRUCTORS----------------------
+    // INSTRUCTORS
 
     public List<CourseInstructor> getAllInstructorsFromRepo(){
         AppDatabase.dbWriteExecutor.execute(()->{

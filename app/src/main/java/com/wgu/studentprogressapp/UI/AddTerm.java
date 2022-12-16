@@ -45,7 +45,6 @@ public class AddTerm extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        // Not doing anything here, fields are blank on create
         termName = findViewById(R.id.edit_text_title);
         startDate = findViewById(R.id.edit_text_startDate);
         endDate = findViewById(R.id.edit_text_endDate);
@@ -57,8 +56,6 @@ public class AddTerm extends AppCompatActivity {
                 mCalendarStart.set(Calendar.YEAR, year);
                 mCalendarStart.set(Calendar.MONTH, month);
                 mCalendarStart.set(Calendar.DAY_OF_MONTH, day);
-//                String myFormat = "MM/dd/yyyy";
-//                SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
                 updateLabelStart();
             }
         };

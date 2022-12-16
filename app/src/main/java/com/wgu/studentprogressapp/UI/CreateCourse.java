@@ -69,7 +69,7 @@ public class CreateCourse extends AppCompatActivity {
     int mCourseId;
 
 
-    //------------------OnCreate-------------------------//
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,10 +102,10 @@ public class CreateCourse extends AppCompatActivity {
         setDatePicker();
 
 
-        //------------------OnCreate-------------------------//
+
     }
 
-    // share and notify menu
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.edit_course_menu, menu);
@@ -194,7 +194,7 @@ public class CreateCourse extends AppCompatActivity {
                 assessmentTableList.add(l);
             }
         }
-//                assessmentTableList = mRepository.getAllAssessmentsFromRepo();
+
 
     }
 
@@ -206,7 +206,7 @@ public class CreateCourse extends AppCompatActivity {
                 instructorTableList.add(instructor);
             }
         }
-//        instructorTableList = mRepository.getAllInstructorsFromRepo();
+
     }
 
     public void getSelectedCourse() {

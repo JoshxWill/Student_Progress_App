@@ -29,7 +29,7 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.CourseView
         this.context = context; // IMPORTANT
     }
 
-    // CLASS
+
     public class CourseViewHolder extends RecyclerView.ViewHolder{
         public TextView recyclerViewItemLayout;
 
