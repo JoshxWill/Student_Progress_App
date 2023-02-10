@@ -2,9 +2,15 @@
 
 ![Mobile Application Developement Storyboard](https://user-images.githubusercontent.com/101890023/208736917-0856c2ce-0cca-4133-81f0-b9f9b171bd20.png)
 
+SCENARIO
+
 As a competent mobile application developer, your understanding of mobile application structure and design will help you to develop applications to meet customer requirements. The following project to develop a student scheduler/student progress tracking application, will help you to apply these skills in a familiar, real-world scenario. This task will allow you to demonstrate your ability to apply the skills learned in the course.
 
 You will develop a multiple-screen mobile application for a student to track terms, courses associated with each term, and assessment(s) associated with each course. The application will allow students to enter, edit, and delete term, course, and assessment data. It should provide summary and detailed views of courses for each term and provide alerts for upcoming performance and objective assessments. This application will use a SQLite database.
+
+
+REQUIREMENTS
+
 
 A.  Create an Android mobile application, compatible for Android 8.0 and higher. The application must include the following functional requirements:
 
